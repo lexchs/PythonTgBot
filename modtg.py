@@ -6,7 +6,7 @@ diff=ourday-today
 ydiff=diff.days*-1
 hdiff=diff.seconds//3600
 mdiff=(diff.seconds%3600)//60
-sdiff=()
+sdiff=(diff.seconds%3600)%60
 
 
-print(ydiff,hdiff,mdiff)
+print(ydiff,hdiff,mdiff,sdiff)
